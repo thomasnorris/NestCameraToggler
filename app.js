@@ -31,7 +31,9 @@ async function startMonitor(device) {
         if (!alive && !device.is_down) {
             if (++device.ping_fail_counter == _cfg.ping.consecutive_pings_before_down) {
                 device.is_down = true;
+                console.log(device.plug_name + ' is down!');
                 await reboot(device.plug_name);
+                console.log(device.plug_name + ' rebooted!');
             }
         }
         else if (alive && device.is_down) {
