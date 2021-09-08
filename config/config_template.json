@@ -1,0 +1,21 @@
+{
+    "wyze": {
+        "username": "<<email>>",
+        "password": "<<password>>"
+    },
+    "devices": [
+        {
+            "camera_IP": "1.1.1.1",
+            "plug_mac": "A1:B2:C3:D4:E5:F6"
+        }
+    ],
+    "ping": {
+        "consecutive_pings_before_down": 10,
+        "time_ms": 1000,
+        "timeout_s": 10
+    },
+    "reboot": {
+        "time_between_off_and_on_ms": 2000,
+        "time_after_reboot_ms": 120000
+    }
+}

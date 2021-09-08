@@ -1,0 +1,20 @@
+{
+  "name": "NestCameraToggler",
+  "version": "1.0.0",
+  "description": "Automatically reboot Nest cams if they go offline via Wyze smart plugs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github-personal:thomasnorris/NestCameraToggler.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ping": "^0.4.1",
+    "wyze-node": "^2.0.6"
+  }
+}
