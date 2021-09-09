@@ -37,7 +37,7 @@ async function startMonitor(device) {
             if (++device.ping_fail_counter == _cfg.ping.consecutive_pings_before_down) {
                 device.is_down = true;
 
-                _logger.Info.Async('Device offline', device.full_info);
+                _logger.Info.Async('Device offline, rebooting', device.full_info);
                 console.log(device.full_info + ' offline, rebooting');
 
                 // reboot the plug
@@ -57,8 +57,6 @@ async function startMonitor(device) {
 }
 
 function reboot(device) {
-    _logger.Info.Async('Rebooting device', device.full_info);
-
     return new Promise(async (resolve, reject) => {
         var wyze_device = await _wyze.getDeviceByName(device);
 
