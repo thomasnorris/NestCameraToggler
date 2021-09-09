@@ -10,12 +10,12 @@
         }
     ],
     "ping": {
-        "consecutive_pings_before_down": 10,
+        "consecutive_pings_before_down": 5,
         "time_ms": 1000,
-        "timeout_s": 10
+        "timeout_s": 5
     },
     "reboot": {
-        "time_between_off_and_on_ms": 2000,
+        "time_between_off_and_on_ms": 5000,
         "time_after_reboot_ms": 120000
     }
 }
